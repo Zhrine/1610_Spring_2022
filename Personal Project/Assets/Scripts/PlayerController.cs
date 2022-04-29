@@ -48,9 +48,7 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.down * turnspeed * horizontalInput * Time.deltaTime);
         
     }
-
-    
-
+         
 }
 
  

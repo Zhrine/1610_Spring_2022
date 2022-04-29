@@ -141,18 +141,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6488075, y: 0.5873792, z: 6.0540385}
   m_Center: {x: -4.096409, y: 0.8984095, z: -0.17341971}
---- !u!114 &55624122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55624120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c99f34e21bfa047a6a150685c7120e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &55624124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,10 +211,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930135388597917522, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
       propertyPath: m_Constraints
-      value: 112
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5236056693902222412, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236056693902222412, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -249,6 +241,23 @@ PrefabInstance:
     - {fileID: 4930135387362509280, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
     - {fileID: 4930135388747231874, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
+--- !u!1 &491582670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358179720388783500, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
+  m_PrefabInstance: {fileID: 279749225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &491582674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491582670}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7061801bf9d844484f1cf41ecb4368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &510520458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -718,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68dc0d6f1fc923c468f15941800ebff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 2.52
+  scrollSpeed: 2
 --- !u!65 &1269428618
 BoxCollider:
   m_ObjectHideFlags: 0
