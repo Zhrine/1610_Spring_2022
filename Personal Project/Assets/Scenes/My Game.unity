@@ -153,7 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca1dab3a5b04ed4ab7b1a758fc19983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  turnspeed: 30
+  speed: 30.61
+  playerRb: {fileID: 4930135388597917522, guid: 47ff4880ca4f0d74d88d0f4088496068, type: 3}
+  zBound: 6
+  rotationZ: 10
+  sensitivityZ: 2
 --- !u!1001 &279749225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,7 +605,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca1dab3a5b04ed4ab7b1a758fc19983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnspeed: 30
   speed: 10
+  playerRb: {fileID: 0}
+  zBound: 6
+  rotationZ: 10
+  sensitivityZ: 2
 --- !u!54 &1102731861
 Rigidbody:
   m_ObjectHideFlags: 0
