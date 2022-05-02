@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8320440695628138330}
   m_Layer: 0
   m_Name: PowerIcon
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.67489624, y: 0.95568633, z: 0.20007594}
-  m_Center: {x: 0, y: -0.00000011920929, z: 0.000000007450581}
+  m_Size: {x: 0.67489624, y: 0.95568633, z: 7.764101}
+  m_Center: {x: 0, y: -0.00000011920929, z: 2.9676108}
 --- !u!114 &-8320440695628138330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33255d5a2082204e82c46243c34f6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2

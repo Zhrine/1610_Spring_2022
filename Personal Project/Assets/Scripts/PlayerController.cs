@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float turnspeed = 20.0f; 
-    public float speed = 10.0f;
+    [SerializeField] float turnspeed = 30.0f; 
+    [SerializeField] float speed = 10.0f;
 
-    private Rigidbody playerRb;
-    private float zBound = 6;
-    private float rotationZ = 10f;
-    private float sensitivityZ = 2f;
+    [SerializeField] Rigidbody playerRb;
+    [SerializeField] float zBound = 6;
+    [SerializeField] float rotationZ = 10f;
+    [SerializeField] float sensitivityZ = 2f;
  
     void lockedRotation()
     {
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
              
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, -rotationZ);
     }
-
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -46,9 +46,23 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
         }
         transform.Rotate(Vector3.down * turnspeed * horizontalInput * Time.deltaTime);
-        
+     
     }
-         
+	private void OnCollisionEnter(Collision collision)
+	{
+		if(collision.gameObject.CompareTag("Enemy"))
+			{
+				Debug.Log("Player Coollided E.");
+			}
+	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if(other.gameObject.CompareTag("Powerup"))
+		{
+			Destroy(other.gameObject);
+		}	
+	}
+
 }
 
  
